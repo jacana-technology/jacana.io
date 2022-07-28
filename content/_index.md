@@ -1,41 +1,8 @@
-# jsr-risotto
+![Jacana Security Research Logo](images/jacana-bird-logo-darkbg.svg)
 
-jsr-risotto is a minimalist, responsive [hugo](https://gohugo.io) theme inspired by terminal ricing aesthetics. It's based on [risotto](https://github.com/joeroe/risotto) and customized by [Jacana](https://jacana.io).
+At Jacana, we love technology, but we also know that any sufficiently advanced technology has bugs. Bugs lead to vulnerabilities, and vulnerabilities lead to getting hacked.
 
-![Screenshot of the risotto theme](https://raw.githubusercontent.com/joeroe/risotto/master/images/screenshot.png)
+That's where we come in: we reverse engineer hardware and software, hunt for bugs, and share our work for others to replicate. Our misison is to improve the standards of security for hardware and software by discovering and responsibly disclosing vulnerabilities and promoting best practices.
 
-## Install
-
-The easiest way to install the theme is to clone this repository into your site's `themes` directory:
-
-```shell
-git clone https://gitlab.com/jacana-security-research/jsr-risotto.git themes/jsr-risotto
-```
-
-If your site is already a git repository, you can add the theme as a submodule instead:
-
-```shell
-git submodule add https://gitlab.com/jacana-security-research/jsr-risotto.git themes/jsr-risotto
-```
-
-## Configure
-
-To use the theme, add `theme = jsr-risotto` to your site's `config.toml` or `config.yaml`.
-
-See `exampleSite/config.toml` for the theme-specific parameters you need to add to your site's `config.toml` or `config.yaml` to configure the theme.
-
-## Update
-
-If you installed the theme using `git clone`, pull the repository to get the latest version:
-
-```shell
-cd themes/jsr-risotto
-git pull
-```
-
-Or, if you added it as a git submodule:
-
-```shell
-git submodule update --remote
-```
+See our blog or contact us for more details.
 
