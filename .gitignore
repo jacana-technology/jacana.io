@@ -1,0 +1,7 @@
+# https://discourse.gohugo.io/t/what-is-the-hugo-build-lock-file/35417
+.hugo_build.lock
+
+# When `hugo` is run, the static content is generated and placed in the `public/` directory.
+# We don't want to upload local build artifacts to GitLab and will instead rely on GitLab CI 
+# to generate the content and serve it.
+public/
