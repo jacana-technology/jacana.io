@@ -1,13 +1,18 @@
 baseURL = 'https://jacana.io'
 languageCode = 'en-us'
-title = 'Jacana Security Research'
-theme = 'jsr-risotto'
-author = 'Jacana Security Research'
+title = 'Jacana.io' # "Jacana Security Research" is a mouthful
+theme = 'jsr-risotto' # https://gitlab.com/jacana-security-research/jsr-risotto
+
+# https://creativelawcenter.com/who-owns-copyright/
+author = 'Patrick Lloyd'
 copyright = '© 2022 Jacana Security Research LLC'
+
 paginate = 3
 DefaultContentLanguage = "en-us"
-enableInlineShortcodes = true
-enableGitInfo = true # gets git information to be used in front matter
+enableInlineShortcodes = true # disabled by default due to security reasons: https://gohugo.io/templates/shortcode-templates/#inline-shortcodes
+
+# Allows info from Git to be used as variables in content: https://gohugo.io/variables/git/#gitinfo-prerequisites
+enableGitInfo = true
 
 # prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
 # See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
@@ -16,9 +21,10 @@ enableGitInfo = true # gets git information to be used in front matter
 
 # Automatically add content sections to main menu
 # https://gohugo.io/templates/menu-templates/#section-menu-for-lazy-bloggers
-sectionPagesMenu = "main"
+#sectionPagesMenu = "main"
 
 [params]
+gitCommitURL = 'https://gitlab.com/jacana-security-research/jacana.io/-/commit'
 
 [params.theme]
 palette = "gruvbox-dark"
@@ -26,8 +32,8 @@ mode = "dark-mode"
 
 # Sidebar: about/bio
 [params.about]
-title = "Jacana"
-description = "A [hugo](https://gohugo.io) theme inspired by terminal ricing."
+title = "Jacana.io"
+description = "We eat bugs for breakfast."
 logo = "images/rice.svg"
 
 # Sidebar: social links
@@ -46,23 +52,40 @@ title = "GitHub"
 url = "https://github.com/jacana-security-research"
 
 [[params.socialLinks]]
+icon = "fab fa-mastodon"
+title = "Mastodon"
+url = "https://github.com/jacana-security-research"
+
+[[params.socialLinks]]
 icon = "fas fa-envelope"
 title = "Contact Us"
-url = "/contact-us/"
+url = "/contact/"
 
 [menu]
+
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 1
 
   [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 10
+    weight = 2
+
+  [[menu.main]]
+    identifier = "work"
+    name = "Work"
+    url = "/work/"
+    weight = 3
 
   [[menu.main]]
     identifier = "contact"
     name = "Contact"
     url = "/contact/"
-    weight = 10
+    weight = 4
 
 
 [taxonomies]
@@ -71,8 +94,9 @@ tag = "tags"
 series = "series"
 
 # For hugo >= 0.60.0, enable inline HTML
-[markup.goldmark.renderer]
-  unsafe = true
+# For the record, this line freaks me out. Why am I allowing unsafe rendering?
+#[markup.goldmark.renderer]
+#  unsafe = true
 
 [privacy]
 
@@ -122,6 +146,3 @@ series = "series"
   # [security.http]
   #   methods = ['(?i)GET|POST']
   #   urls = ['.*']
-
-[frontmatter]
-  lastmod = [':git', 'lastmod', 'date', 'publishDate'] # default per https://gohugo.io/getting-started/configuration/#configure-front-matter
