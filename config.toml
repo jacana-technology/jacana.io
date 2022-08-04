@@ -87,6 +87,12 @@ url = "/contact/"
     url = "/contact/"
     weight = 4
 
+  [[menu.main]]
+    identifier = "log"
+    name = "log"
+    url = "/log/"
+    weight = 5
+
 
 [taxonomies]
 category = "categories"
