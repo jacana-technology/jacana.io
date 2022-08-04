@@ -1,5 +1,5 @@
 +++
-aliases = ["posts", "articles"]
-title = "Blog"
-tags = ["index"]
+title = "Jacana Blog"
 +++
+
+This is the blog.
