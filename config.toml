@@ -1,6 +1,6 @@
 baseURL = 'https://jacana.io'
 title = 'Jacana.io' # "Jacana Security Research" is a mouthful
-theme = 'hugo-PaperMod' # https://gitlab.com/jacana-security-research/jsr-risotto
+theme = 'PaperMod' # https://github.com/adityatelange/hugo-PaperMod
 paginate = 5
 copyright = '© 2022 Jacana Security Research LLC' # https://creativelawcenter.com/who-owns-copyright/
 DefaultContentLanguage = "en-us"

@@ -1,3 +1,6 @@
 [submodule "themes/jsr-risotto"]
 	path = themes/jsr-risotto
 	url = https://gitlab.com/jacana-security-research/jsr-risotto.git
+[submodule "themes/PaperMod"]
+	path = themes/PaperMod
+	url = https://github.com/adityatelange/hugo-PaperMod.git
