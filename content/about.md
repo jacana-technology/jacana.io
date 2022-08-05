@@ -1,7 +1,7 @@
 +++
 title = "About"
 description = "Meet the team at Jacana!"
-date = "2019-02-28"
+date = 2022-08-04
 aliases = ["about-us"]
 author = "Patrick Lloyd"
 +++

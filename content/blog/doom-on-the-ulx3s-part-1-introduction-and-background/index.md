@@ -1,14 +1,20 @@
 +++
-title = "Part 1: Introduction and Background"
+title = "DOOM on the ULX3S Part 1: Introduction and Background"
+author = 'Patrick Lloyd'
 date = 2022-08-03T17:03:34-07:00
 draft = true
-tags = []
-categories = []
-series = "ulx3s-doom"
+tags = ["fpga", "linux", "embedded", "riscv"]
+categories = ["tutorial", "tools"]
+series = ["ulx3s-doom"]
+ShowToc = true
+[cover]
+    image = "41d78c8f6746444bbf2a906e822e4d2e.jpg"
+    # can also paste direct link from external site
+    # ex. https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png
+    alt = "DOOM frame carved into a cactus"
+    caption = "A cactus can technically run DOOM, but the frame rate is awful (from [Reddit](https://www.reddit.com/r/hmmm/comments/wdrf44/hmmm/))"
+    relative = true # To use relative path for cover image, used in hugo Page-bundles
 +++
-
-![7o301kk6v5f91.jpg](:/41d78c8f6746444bbf2a906e822e4d2e)
-*A cactus can technically run DOOM, but the frame rate is awful (from [Reddit](https://www.reddit.com/r/hmmm/comments/wdrf44/hmmm/))*
 
 ## Introduction
 It's a right of passage to get an embedded system (or any system, really) [to run DOOM](https://www.reddit.com/r/itrunsdoom/). I was rummaging around my box of development boards recently and I rediscovered my awesome [ULX3S](https://radiona.org/ulx3s/). It's based around the Lattice ECP5 FPGA, which, thanks to the amazing work of a huge community of people, has a [fully open-source toolchain](https://github.com/YosysHQ/oss-cad-suite-build) that supports many other boards and FPGA vendors. In addition to the ECP5, the ULX3S also sports:
